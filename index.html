@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew Bliss Café | CRM System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <h1>Brew Bliss Café</h1>
+  <p>Café Customer Relationship Management System</p>
+</header>
+
+<section class="customer-form">
+  <h2>New Order</h2>
+
+  <div class="form-group">
+    <input type="text" id="name" placeholder="Customer Name" />
+    <input type="email" id="email" placeholder="Email Address" />
+
+    <select id="items">
+      <option value="">Select Item</option>
+      <option>Espresso</option>
+      <option>Cappuccino</option>
+      <option>Cold Coffee</option>
+      <option>Oreo Milkshake</option>
+      <option>Veg Spicy Pizza</option>
+      <option>Chicken Fiesta</option>
+      <option>Red Velvet</option>
+    </select>
+
+    <button onclick="addOrder()">Add Order</button>
+  </div>
+</section>
+
+<section class="customer-table">
+  <h2>Orders Dashboard</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>Email</th>
+        <th>Item</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
